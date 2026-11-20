@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131d">
+  <meta name="description" content="Una web de ejemplo moderna, adaptable e interactiva, creada con HTML, CSS y JavaScript.">
+  <title>Ruben Segura — Ideas que funcionan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#10131d;--panel:#171c29;--panel2:#1d2433;--text:#f3f5fb;--muted:#a3acc0;--line:#2b3345;--accent:#b8f36b;--accent2:#8de0cf;--shadow:0 24px 80px #0005}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.mono{font-family:"DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:-.05em;font-size:1.1rem}.brand span{color:var(--accent)}.navlinks{display:flex;gap:28px;color:var(--muted);font-size:.88rem}.navlinks a:hover{color:var(--accent)}.nav-actions{display:flex;gap:10px;align-items:center}.iconbtn{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--text);cursor:pointer}.menu{display:none}.hero{padding:100px 0 92px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:540px;height:540px;border-radius:50%;right:-120px;top:-170px;background:radial-gradient(circle,#b8f36b20,transparent 68%);pointer-events:none}.eyebrow{display:flex;align-items:center;gap:12px}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}h1{font-size:clamp(3.4rem,8vw,6.7rem);line-height:.99;letter-spacing:-.075em;max-width:850px;margin:25px 0 24px}h1 em{font-style:normal;color:var(--accent)}.lead{max-width:610px;color:var(--muted);font-size:1.12rem}.hero-bottom{display:flex;align-items:center;gap:16px;margin-top:34px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 19px;border-radius:8px;font-weight:800;font-size:.88rem;border:1px solid var(--accent);background:var(--accent);color:#151a20;transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px #b8f36330}.btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}.micro{font-size:.78rem;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:70px}.stat{background:var(--panel);padding:22px 25px}.stat strong{display:block;font-size:1.55rem;letter-spacing:-.05em}.stat span{font-size:.78rem;color:var(--muted)}section{padding:82px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.section-head h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.06em;line-height:1.08;margin:9px 0 0}.section-head p{max-width:390px;color:var(--muted);margin:0;font-size:.92rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:23px;min-height:255px;display:flex;flex-direction:column;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#718052}.card-top{display:flex;justify-content:space-between;align-items:center}.glyph{width:44px;height:44px;border-radius:12px;background:#b8f36b18;color:var(--accent);display:grid;place-items:center;font-size:1.35rem}.tag{font: .68rem "DM Mono",monospace;color:var(--muted);border:1px solid var(--line);border-radius:30px;padding:5px 9px}.card h3{font-size:1.18rem;letter-spacing:-.04em;margin:22px 0 8px}.card p{color:var(--muted);font-size:.87rem;margin:0 0 22px}.card a{margin-top:auto;color:var(--accent);font-size:.82rem;font-weight:800}.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}.about-visual{min-height:350px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#202a3a,#151a27);display:grid;place-items:center;position:relative;overflow:hidden}.orb{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e2ffad,#8ebd56 35%,#354b32 72%);box-shadow:0 0 100px #b8f36b38;position:relative}.orb:after{content:"";position:absolute;inset:20px -35px;border:1px solid #d8f9a6a0;border-radius:50%;transform:rotate(-32deg)}.visual-label{position:absolute;bottom:18px;left:20px}.about-copy h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.06em;line-height:1.08;margin:12px 0 18px}.about-copy p{color:var(--muted)}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.chip{padding:8px 12px;border-radius:7px;border:1px solid var(--line);font-size:.77rem;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{border-top:1px solid var(--line);padding-top:18px}.step b{font: .75rem "DM Mono",monospace;color:var(--accent)}.step h3{margin:15px 0 7px}.step p{font-size:.86rem;color:var(--muted)}.contact{background:var(--accent);color:#151a20;border-radius:18px;padding:48px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact .mono,.contact p{color:#34422a}.contact h2{font-size:clamp(2rem,4vw,3.5rem);letter-spacing:-.07em;line-height:1.05;margin:10px 0}.contact .btn{background:#151a20;border-color:#151a20;color:white;white-space:nowrap}.footer{padding:35px 0;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);margin-top:80px}.footer a:hover{color:var(--accent)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.filter{border:1px solid var(--line);background:transparent;color:var(--muted);padding:8px 13px;border-radius:30px;font-size:.76rem;cursor:pointer}.filter.active,.filter:hover{background:var(--accent);border-color:var(--accent);color:#151a20}.hidden{display:none!important}.light{color-scheme:light;--bg:#f4f6f1;--panel:#fff;--panel2:#edf0e9;--text:#192019;--muted:#667064;--line:#dce2d7;--accent:#648e2f;--accent2:#277d6c;--shadow:0 24px 80px #29351b15}.light .hero:after{background:radial-gradient(circle,#648e2f20,transparent 68%)}.light .about-visual{background:linear-gradient(145deg,#e6ebdf,#f7f8f4)}.light .orb{background:radial-gradient(circle at 35% 30%,#e2ffad,#8ebd56 35%,#354b32 72%)}.light .btn{color:white}.light .btn.secondary{color:var(--text)}.light .glyph{background:#648e2f18}
+    @media(max-width:760px){.navlinks{display:none;position:absolute;top:75px;left:0;right:0;background:var(--panel);padding:20px 24px;z-index:5;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{padding:75px 0 65px}.stats{margin-top:48px}.cards{grid-template-columns:1fr}.card{min-height:210px}.about{grid-template-columns:1fr;gap:30px}.about-visual{min-height:270px}.steps{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.contact{padding:30px;align-items:flex-start;flex-direction:column}.footer{flex-direction:column}.wrap{width:min(100% - 34px,1120px)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">RS<span>.</span></a>
+      <div class="navlinks" id="navlinks"><a href="#proyectos">Proyectos</a><a href="#sobre-mi">Enfoque</a><a href="#proceso">Proceso</a><a href="#contacto">Contacto</a></div>
+      <div class="nav-actions">
+        <button class="iconbtn" id="theme" aria-label="Cambiar tema" title="Cambiar tema">☼</button>
+        <button class="iconbtn menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="eyebrow"><span class="dot"></span><span class="mono">Diseño · Tecnología · Ideas</span></div>
+      <h1>Ideas claras.<br><em>Experiencias</em> útiles.</h1>
+      <p class="lead">Una pequeña muestra de lo que se puede construir con tecnologías web: interfaces cuidadas, contenido bien organizado y detalles que hacen que una web se sienta viva.</p>
+      <div class="hero-bottom"><a class="btn" href="#proyectos">Explorar proyectos <span>↘</span></a><a class="btn secondary" href="#sobre-mi">Conocer el enfoque</a><span class="micro">Hecha con HTML, CSS y JavaScript</span></div>
+      <div class="stats">
+        <div class="stat"><strong>100%</strong><span>Adaptable a móvil y escritorio</span></div>
+        <div class="stat"><strong>0</strong><span>Dependencias de backend</span></div>
+        <div class="stat"><strong>∞</strong><span>Posibilidades en el navegador</span></div>
+      </div>
+    </section>
+    <section class="wrap" id="proyectos">
+      <div class="section-head"><div><div class="mono">01 / Selección</div><h2>Pequeñas ideas,<br>grandes posibilidades.</h2></div><p>Estos ejemplos son demostraciones visuales. Se pueden ampliar y conectar a APIs o servicios externos cuando necesiten datos reales.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar proyectos">
+        <button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="herramienta">Herramientas</button><button class="filter" data-filter="datos">Datos</button><button class="filter" data-filter="web">Web</button>
+      </div>
+      <div class="cards" id="cards">
+        <article class="card" data-category="herramienta"><div class="card-top"><div class="glyph">⌘</div><span class="tag">INTERACTIVO</span></div><h3>Panel de control</h3><p>Una interfaz tipo dashboard con indicadores, estados y accesos rápidos para tenerlo todo de un vistazo.</p><a href="#contacto">Explorar concepto ↗</a></article>
+        <article class="card" data-category="datos"><div class="card-top"><div class="glyph">▥</div><span class="tag">VISUALIZACIÓN</span></div><h3>Datos que cuentan</h3><p>Gráficos y resúmenes que convierten información compleja en algo fácil de entender.</p><a href="#contacto">Explorar concepto ↗</a></article>
+        <article class="card" data-category="web"><div class="card-top"><div class="glyph">✳</div><span class="tag">DISEÑO WEB</span></div><h3>Web de producto</h3><p>Una página de presentación rápida, clara y pensada para funcionar bien en cualquier pantalla.</p><a href="#contacto">Explorar concepto ↗</a></article>
+      </div>
+    </section>
+    <section class="wrap" id="sobre-mi">
+      <div class="about">
+        <div class="about-visual"><div class="orb"></div><div class="visual-label mono">Curiosidad en movimiento / 2026</div></div>
+        <div class="about-copy"><div class="mono">02 / El enfoque</div><h2>No se trata solo de que se vea bien.</h2><p>Una buena web tiene que ser rápida, fácil de usar y resolver algo concreto. Esta demo combina una estructura sencilla con una capa visual moderna y pequeñas interacciones sin necesitar un servidor.</p><p>El contenido, los colores y las secciones se pueden adaptar a una marca, un proyecto personal, un catálogo o una herramienta interna.</p><div class="chips"><span class="chip">Diseño responsive</span><span class="chip">Accesibilidad básica</span><span class="chip">Carga ligera</span><span class="chip">Sin backend</span></div></div>
+      </div>
+    </section>
+    <section class="wrap" id="proceso">
+      <div class="section-head"><div><div class="mono">03 / Cómo se construye</div><h2>De la idea a la pantalla.</h2></div><p>Una base estática puede ser mucho más que una tarjeta de visita. Este es un punto de partida escalable.</p></div>
+      <div class="steps"><div class="step"><b>01 — ESTRUCTURA</b><h3>Contenido con sentido</h3><p>HTML semántico para organizar la información y facilitar su mantenimiento.</p></div><div class="step"><b>02 — EXPERIENCIA</b><h3>Diseño adaptable</h3><p>CSS moderno para una experiencia coherente en móvil, tablet y escritorio.</p></div><div class="step"><b>03 — INTERACCIÓN</b><h3>Detalles útiles</h3><p>JavaScript para filtros, menús, temas y otras funciones que se ejecutan en el navegador.</p></div></div>
+    </section>
+    <section class="wrap" id="contacto"><div class="contact"><div><div class="mono">¿Y ahora qué?</div><h2>La siguiente idea<br>puede ser la tuya.</h2><p>Esta web es una demo editable. Cambia textos, colores, secciones y proyectos a tu gusto.</p></div><a class="btn" href="https://github.com/rubenseglop/web" target="_blank" rel="noopener">Ver código en GitHub ↗</a></div></section>
+  </main>
+  <footer class="wrap footer"><span>© <span id="year"></span> · Demo web estática</span><span>Construida con cuidado y unas cuantas líneas de código.</span><a href="#inicio">Volver arriba ↑</a></footer>
+  <script>
+    const root=document.documentElement;
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('theme').addEventListener('click',()=>{root.classList.toggle('light');document.getElementById('theme').textContent=root.classList.contains('light')?'☾':'☼';});
+    const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰';});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}));
+    document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));button.classList.add('active');const filter=button.dataset.filter;document.querySelectorAll('.card').forEach(card=>card.classList.toggle('hidden',filter!=='todos'&&card.dataset.category!==filter));}));
+  </script>
+</body>
+</html>
